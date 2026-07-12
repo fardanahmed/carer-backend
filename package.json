@@ -1,0 +1,25 @@
+{
+  "name": "carer-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone backend for the CARER platform.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env.local --experimental-strip-types src/server.ts",
+    "start": "node --env-file=.env.local --experimental-strip-types src/server.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.4",
+    "resend": "^6.17.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
